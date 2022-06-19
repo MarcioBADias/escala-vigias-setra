@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escala Vigias</title>
+    <link rel="stylesheet" href="escalaVigias.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="logo_araruama.png" alt="">
+        <h1>Escala Vigias</h1>
+        
+    </header>
+    <main>
+        <section>
+            <form>
+                <label for="nomeVigia"><p>O nome do Vigia: </label>
+                <input type="text" id="nomeVigia" class="input-padrao" required></p>
+                <label for="mes"><p> Quantos dias têm o mês? </label>
+                    <select id="mes">
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                        <option>31</option>
+                    </select>
+                <label for="primeiroPlantao"><p> Qual seu primieiro dia do mês trabalhado? </label>
+                    <select id="primeiroPlantao">
+                        <option>01</option>
+                        <option>02</option>
+                        <option>03</option>
+                        <option>04</option>
+                    </select>
+                
+                </section>
+        <div class="botao">
+            <input type="button" value="Mostrar escala" onclick="clicar()">
+                
+        </div>
+        <div id="res">
+
+        </div>
+        <div id="res1">
+
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Marcius Codes</p>
+    </footer>
+    <script src="escalaVigias.js"></script>
+</body>
+</html>
