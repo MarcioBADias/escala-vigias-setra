@@ -11,7 +11,8 @@ function clicar() {
     let d = Number(dia.value);
     
     for (let c = d; c <= m; c += 4){
-        res1.innerHTML += `<strong> ${c} </strong>`
+        res1.innerHTML += `🍺 <strong>${c}</strong> `
     }
+    res1.innerHTML += `🗓`
 
 }
