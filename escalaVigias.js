@@ -1,18 +1,18 @@
-function clicar() {
-    let vigia = document.getElementById("nomeVigia");
-    let mes = document.getElementById("mes");
-    let dia = document.getElementById("primeiroPlantao");
-    let res = document.getElementById("res");
-    let res1 = document.getElementById("res1");
-    
-    res.innerHTML = "<p>" + "O vigia " +"<strong>" + vigia.value + "</strong>" + 
-        " trabalha nos dias abaixo:" 
-    let m = Number(mes.value);
-    let d = Number(dia.value);
-    
-    for (let c = d; c <= m; c += 4){
-        res1.innerHTML += `🍺 <strong>${c}</strong> `
-    }
-    res1.innerHTML += `🗓`
+const form = document.querySelector('form');
+const calendarDiv = document.querySelector('.calendar');
 
+const createCalendar = (days) => {
+    for(let i = 1; i <= days; i++){
+        const calendarNumbersDays = calendarDiv.querySelector('.calendar_numbers__days');
+        calendarNumbersDays.innerHTML += `<span class="days">${i}</span>`;
+    }
 }
+
+
+
+form.addEventListener('submit', e => {
+    e.preventDefault();
+    const days = form.mes.value;
+    calendarDiv.classList.remove('hidden');
+    createCalendar(days);   
+})

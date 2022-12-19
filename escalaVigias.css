@@ -1,3 +1,8 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
 body {
     background: rgb(134, 143, 163);
 }
@@ -15,7 +20,7 @@ header {
 main {
     background: white;
     border-radius: 10px;
-    width: 640px;
+    width: 620px;
     padding: 10px;
     margin: auto;
     box-shadow: 5px 5px 10px black;
@@ -30,13 +35,44 @@ main {
     text-align: center;
 }
 
-div {
-    margin: 0 0 0 10px ;
-    padding: 0 0 0 10px;
-    text-align: center;
+.calendar{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    max-width: 680px;
+    padding: 10px;
 }
 
+.calendar_days__weeks{
+    border-bottom: 2px solid #333;
+    display: flex;
+    padding: 10px 0;
+    width: 100%;
+    flex-wrap: wrap;
+}
 
+.calendar_numbers__days{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 10px;
+    
+}
+
+.calendar_days__weeks span{
+    display: inline-block;
+    width: 14.2%;
+}
+
+.calendar_numbers__days span{
+    display: inline-block;
+    height: 60px;
+    width: 14.2%;
+}
+
+.hidden{
+    display: none;
+}
 
 footer {
     color: white;
