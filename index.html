@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Escala Vigias</title>
-    <link rel="stylesheet" href="escalaVigias.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header>
@@ -17,7 +17,7 @@
         <section>
             <form>
                 <label for="nomeVigia"><p>O nome do Vigia: </label>
-                    <input type="text" id="nomeVigia" class="input-padrao" required></p>
+                    <input type="text" id="nomeVigia" name="vigia"></p>
                     <label for="mes"><p> Quantos dias têm o mês? </label>
                         <select id="mes">
                             <option>28</option>
@@ -26,7 +26,7 @@
                             <option>31</option>
                         </select>
                     <label for="primeiroPlantao"><p> Qual seu primieiro dia do mês trabalhado? </label>
-                        <select id="primeiroPlantao">
+                        <select class="primeiroPlantao" name="inic">
                             <option>01</option>
                             <option>02</option>
                             <option>03</option>
@@ -55,6 +55,6 @@
     <footer>
         <p>&copy; Marcius Codes</p>
     </footer>
-    <script src="escalaVigias.js"></script>
+    <script src="./app.js"></script>
 </body>
 </html>
